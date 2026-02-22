@@ -22,9 +22,9 @@ Compatible with any mods.
 
 Supported mods:
 
-- [Blighted Animals Retextured](https://www.nexusmods.com/morrowind/mods/42245) by Catherine, Darknut and PeterBitt
-- [Ice Scrib](https://www.nexusmods.com/morrowind/mods/51338) by dietbob196045
-- [Creatures and Critters](https://www.nexusmods.com/morrowind/mods/54518) by Danae123, Piratelord, Neoptolemus, Pumaman, Arcimaestro Antares and many others
+- [Blighted Animals Retextured](https://www.nexusmods.com/morrowind/mods/42245) by Catherine, Darknut and PeterBitt - Basic compatibility
+- [Ice Scrib](https://www.nexusmods.com/morrowind/mods/51338) by dietbob196045 - Ice scribs will give your hands chills
+- [Creatures and Critters](https://www.nexusmods.com/morrowind/mods/54518) by Danae123 and many others - Basic compatibility
 
 ## Credits
 
