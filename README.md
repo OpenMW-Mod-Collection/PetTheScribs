@@ -6,7 +6,7 @@ Legendary mod made compatible and expandable.
 
 You know the rules and so do I.
 
-## Why use it insted of REVOLUTION edition?
+## Why use it instead of REVOLUTION edition?
 
 Because it's conflict-prune, can be installed at any time, supports petting diseased scribs and has integrations with modded scribs. Now that's a REVOLUTION is I ever seen one.
 
