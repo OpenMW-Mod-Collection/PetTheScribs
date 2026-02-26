@@ -30,7 +30,9 @@ local function normalScrib(actor, scrib, options)
         jelly:moveInto(inv)
 
         options.lastJellyTimeList[scrib.id] = currTime
-        actor:sendEvent("ShowMessage", { message = l10n("msg_jellyGot", {}) })
+        actor:sendEvent("ShowMessage", {
+            message = l10n("msg_jellyGot", { jellyCount = jellyCount })
+        })
     end
 end
 

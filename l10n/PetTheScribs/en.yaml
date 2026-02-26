@@ -1,6 +1,6 @@
 msg_scribPat: You pat the scrib.
 msg_caughtDisease: You have contracted {disease}.
-msg_jellyGot: You got 1 Scrib Jelly.
+msg_jellyGot: You got {jellyCount} Scrib Jelly.
 
 page_name: Pet the Scribs
 page_description: You know what to do.
