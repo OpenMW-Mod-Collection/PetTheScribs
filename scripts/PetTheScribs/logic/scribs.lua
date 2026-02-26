@@ -23,7 +23,7 @@ local function normalScrib(actor, scrib, options)
     local maxJelly = settings:get("maxJelly")
     local jellyCount = math.random(minJelly, maxJelly)
 
-    if currTime > lastJellyTime + jellyCooldown or jellyCount > 0 then
+    if currTime > lastJellyTime + jellyCooldown and jellyCount > 0 then
         local jelly = world.createObject("ingred_scrib_jelly_01", jellyCount)
         local inv = actor.type.inventory(actor)
         ---@diagnostic disable-next-line: discard-returns
