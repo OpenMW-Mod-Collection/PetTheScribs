@@ -16,7 +16,7 @@ end
 
 local function onCreatureActive(creature, actor)
     local scrib = Scribs[creature.recordId]
-    if not scrib then return end
+    if not scrib or types.Actor.isDead(creature) then return end
     scrib(actor, creature, { lastJellyTimeList = lastJellyTime })
 end
 

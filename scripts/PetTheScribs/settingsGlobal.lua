@@ -9,15 +9,6 @@ I.Settings.registerGroup {
     order = 1,
     settings = {
         {
-            key = 'jellyChance',
-            name = 'jellyChance_name',
-            description = 'jellyChance_desc',
-            renderer = 'number',
-            default = .25,
-            min = 0,
-            max = 1,
-        },
-        {
             key = 'minJelly',
             name = 'minJelly_name',
             renderer = 'number',

@@ -1,14 +1,11 @@
 msg_scribPat: You pat the scrib.
-# TODO make messages match vanilla ones
-msg_chatchedDisease: You caught a disease from petting the scrib.
-msg_chatchedBlight: You caught blight from petting the scrib.
+msg_caughtDisease: You have contracted {disease}.
+msg_jellyGot: You got 1 Scrib Jelly.
 
 page_name: Pet the Scribs
 page_description: You know what to do.
 
 settings_groupName: Settings
-jellyChance_name: Chance to Get Scrib Jelly
-jellyChance_desc: Only healthy scribs give jelly.
 minJelly_name: Minimum Scrib Jelly
 maxJelly_name: Maximum Scrib Jelly
 jellyCooldown_name: Scrib Jelly Cooldown (Hours)

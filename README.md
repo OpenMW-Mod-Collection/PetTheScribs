@@ -4,7 +4,7 @@ Legendary mod made compatible and expandable.
 
 *For MWSE alternative, check out [Pet the Damn Scrib](https://www.nexusmods.com/morrowind/mods/52116) by Merlord.*
 
-Pet him.
+You know the rules and so do I.
 
 ## Why use it insted of REVOLUTION edition?
 
@@ -20,11 +20,10 @@ Safe to install, update or delete mid-playthrough.
 
 Compatible with any mods.
 
-Supported mods:
+Supported scrib mods:
 
-- [Blighted Animals Retextured](https://www.nexusmods.com/morrowind/mods/42245) by Catherine, Darknut and PeterBitt - Basic compatibility
-- [Ice Scrib](https://www.nexusmods.com/morrowind/mods/51338) by dietbob196045 - Ice scribs will give your hands chills
-- [Creatures and Critters](https://www.nexusmods.com/morrowind/mods/54518) by Danae123 and many others - Basic compatibility
+- [Ice Scrib](https://www.nexusmods.com/morrowind/mods/51338) by dietbob196045
+- [Creatures and Critters](https://www.nexusmods.com/morrowind/mods/54518) by Danae123 and many others
 
 ## Credits
 
