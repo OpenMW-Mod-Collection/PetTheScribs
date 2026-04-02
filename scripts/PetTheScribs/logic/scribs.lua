@@ -39,9 +39,17 @@ end
 local function diseasedScrib(actor, scrib, options)
     doTheScribby(actor)
 
-    local proc = math.random() > options.diseaseChance
+    local activeEffects = actor.type.activeEffects(actor)
+    local diseaseResist = options.resistEffect
+        and activeEffects:getEffect(options.resistEffect).magnitude
+        or 0
+    local proc = math.random() > options.diseaseChance - diseaseResist
+
     local alreadyDiseased = actor.type.activeSpells(actor):isSpellActive(options.diseaseId)
-    if proc and not alreadyDiseased then
+
+    local telekinesisActive = activeEffects:getEffect(core.magic.EFFECT_TYPE.Telekinesis).magnitude > 0
+
+    if proc and not alreadyDiseased and not telekinesisActive then
         actor.type.spells(actor):add(options.diseaseId)
         actor:sendEvent("ShowMessage", {
             message = l10n("msg_caughtDisease", { disease = options.diseaseName })
@@ -52,10 +60,13 @@ end
 local function iceScrib(actor, scrib, options)
     doTheScribby(actor)
 
-    actor.type.activeSpells(actor):add({
-        id = "frostbite",
-        effects = { 0 }
-    })
+    local telekinesisActive = actor.type.activeEffects(actor):getEffect("telekinesis").magnitude > 0
+    if not telekinesisActive then
+        actor.type.activeSpells(actor):add({
+            id = "frostbite",
+            effects = { 0 }
+        })
+    end
 end
 
 Scribs = {
@@ -65,6 +76,7 @@ Scribs = {
         options.diseaseChance = settings:get("diseaseChance")
         options.diseaseId = "droops"
         options.diseaseName = "Droops"
+        options.resistEffect = core.magic.EFFECT_TYPE.ResistCommonDisease
         diseasedScrib(actor, scrib, options)
     end,
     ["scrib_vaba-amus"]    = normalScrib,
@@ -72,6 +84,7 @@ Scribs = {
         options.diseaseChance = settings:get("blightChance")
         options.diseaseId = "ash-chancre"
         options.diseaseName = "Ash-chancre"
+        options.resistEffect = core.magic.EFFECT_TYPE.ResistBlightDisease
         diseasedScrib(actor, scrib, options)
     end,
     ["scrib_rerlas"]       = normalScrib,

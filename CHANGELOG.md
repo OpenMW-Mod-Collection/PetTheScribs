@@ -1,5 +1,10 @@
 # Pet the Scribs - Lua Edition (OpenMW)
 
+## 1.2
+
+- Telekinesis now prevents player from getting negative effects from petting scribs
+- Added disease resist effect checks when petting diseased scribs
+
 ## 1.1
 
 - Added "PetTheScribs_ScribPetted" event because other mods deserve to know it too
