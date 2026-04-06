@@ -1,5 +1,11 @@
 # Pet the Scribs - Lua Edition (OpenMW)
 
+## 1.3
+
+- Added support for Diverse Scribs by borok
+- Added support for TriangleTooth's Ecology Mod by TriangleTooth
+- Raised default disease chance from 25% to 50%
+
 ## 1.2.1
 
 - Fixed chances to catch a disease being inverted

@@ -24,6 +24,8 @@ Supported scrib mods:
 
 - [Ice Scrib](https://www.nexusmods.com/morrowind/mods/51338) by dietbob196045
 - [Creatures and Critters](https://www.nexusmods.com/morrowind/mods/54518) by Danae123 and many others
+- [Diverse Scribs](https://www.nexusmods.com/morrowind/mods/56176) by borok
+- [TriangleTooth's Ecology Mod](https://www.nexusmods.com/morrowind/mods/47061) by TriangleTooth
 
 ## Credits
 

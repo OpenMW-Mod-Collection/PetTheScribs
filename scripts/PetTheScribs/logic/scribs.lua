@@ -45,14 +45,14 @@ local function diseasedScrib(actor, scrib, options)
         or 0
     local proc = math.random() < options.diseaseChance - diseaseResist
 
-    local alreadyDiseased = actor.type.activeSpells(actor):isSpellActive(options.diseaseId)
+    local alreadyDiseased = actor.type.activeSpells(actor):isSpellActive(options.disease.id)
 
     local telekinesisActive = activeEffects:getEffect(core.magic.EFFECT_TYPE.Telekinesis).magnitude > 0
 
     if proc and not alreadyDiseased and not telekinesisActive then
-        actor.type.spells(actor):add(options.diseaseId)
+        actor.type.spells(actor):add(options.disease.id)
         actor:sendEvent("ShowMessage", {
-            message = l10n("msg_caughtDisease", { disease = options.diseaseName })
+            message = l10n("msg_caughtDisease", { disease = options.disease.name })
         })
     end
 end
@@ -71,29 +71,42 @@ end
 
 Scribs = {
     -- vanilla
-    ["scrib"]              = normalScrib,
-    ["scrib diseased"]     = function(actor, scrib, options)
+    ["scrib"] = normalScrib,
+    ["scrib diseased"] = function(actor, scrib, options)
         options.diseaseChance = settings:get("diseaseChance")
-        options.diseaseId = "droops"
-        options.diseaseName = "Droops"
+        options.disease = core.magic.spells.records["droops"]
         options.resistEffect = core.magic.EFFECT_TYPE.ResistCommonDisease
         diseasedScrib(actor, scrib, options)
     end,
-    ["scrib_vaba-amus"]    = normalScrib,
-    ["scrib blighted"]     = function(actor, scrib, options)
+    ["scrib_vaba-amus"] = normalScrib,
+    ["scrib blighted"] = function(actor, scrib, options)
         options.diseaseChance = settings:get("blightChance")
-        options.diseaseId = "ash-chancre"
-        options.diseaseName = "Ash-chancre"
+        options.disease = core.magic.spells.records["droops"]
         options.resistEffect = core.magic.EFFECT_TYPE.ResistBlightDisease
         diseasedScrib(actor, scrib, options)
     end,
-    ["scrib_rerlas"]       = normalScrib,
+    ["scrib_rerlas"] = normalScrib,
 
     -- ice scrib
     -- https://www.nexusmods.com/morrowind/mods/51338
-    ["icescrib"]           = iceScrib,
+    ["icescrib"] = iceScrib,
 
     -- Creatures and Critters
     -- https://www.nexusmods.com/morrowind/mods/54518
     ["aa_cr_horned_scrib"] = normalScrib,
+
+    -- Diverse Scribs
+    -- https://www.nexusmods.com/morrowind/mods/56176
+    ["scrib_2"] = normalScrib,
+    ["scrib diseased_2"] = function(actor, scrib, options)
+        options.diseaseChance = settings:get("diseaseChance")
+        options.disease = core.magic.spells.records["droops"]
+        options.resistEffect = core.magic.EFFECT_TYPE.ResistCommonDisease
+        diseasedScrib(actor, scrib, options)
+    end,
+    ["ttooth_scrib_2"] = normalScrib,
+
+    -- TriangleTooth's Ecology Mod
+    -- https://www.nexusmods.com/morrowind/mods/47061
+    ["ttooth_scrib"] = normalScrib,
 }
