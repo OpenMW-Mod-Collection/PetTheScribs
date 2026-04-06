@@ -1,5 +1,10 @@
 # Pet the Scribs - Lua Edition (OpenMW)
 
+## 1.2.1
+
+- Fixed chances to catch a disease being inverted
+- Fixed disease resists not being properly taken into account when petting diseased scribs
+
 ## 1.2
 
 - Telekinesis now prevents player from getting negative effects from petting scribs

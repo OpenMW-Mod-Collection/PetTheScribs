@@ -41,9 +41,9 @@ local function diseasedScrib(actor, scrib, options)
 
     local activeEffects = actor.type.activeEffects(actor)
     local diseaseResist = options.resistEffect
-        and activeEffects:getEffect(options.resistEffect).magnitude
+        and activeEffects:getEffect(options.resistEffect).magnitude / 100
         or 0
-    local proc = math.random() > options.diseaseChance - diseaseResist
+    local proc = math.random() < options.diseaseChance - diseaseResist
 
     local alreadyDiseased = actor.type.activeSpells(actor):isSpellActive(options.diseaseId)
 
