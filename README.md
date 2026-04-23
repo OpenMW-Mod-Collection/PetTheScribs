@@ -10,7 +10,7 @@ You know the rules and so do I.
 
 ## Why use it instead of REVOLUTION edition?
 
-Because it's conflict-prune, can be installed at any time, has new animations, supports petting diseased scribs and has integrations with modded scribs. Now that's a REVOLUTION is I ever seen one.
+Because it's conflict-prune, can be installed at any time, has new animations, supports petting diseased scribs and has integrations with modded scribs. Now that's a REVOLUTION if I ever seen one.
 
 ## Requirements
 
