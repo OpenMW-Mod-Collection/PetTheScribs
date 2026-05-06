@@ -1,5 +1,9 @@
 # Pet the Scribs - Lua Edition (OpenMW)
 
+## 2.1.1
+
+- Fixed log spam
+
 ## 2.1
 
 - Improved animations
